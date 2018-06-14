@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# bin/detect <build-dir>
+
+#if [ -f $1/myApp.csproj ]; then
+if true; then
+    echo "Confluent Cli"
+    exit 0
+else
+    exit 1
+fi
