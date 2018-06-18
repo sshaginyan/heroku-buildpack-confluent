@@ -9,4 +9,4 @@ wget -O /tmp/confluent.tar.gz http://packages.confluent.io/archive/4.1/confluent
 tar xvzf /tmp/confluent.tar.gz -C /tmp
 rm -rf /tmp/confluent-4.1.1/share/java/kafka
 cp -R /tmp/confluent-4.1.1 "$BUILD_DIR/.confluent"
-echo "export PATH=$BUILD_DIR/.confluent/bin:$PATH" > "$BUILD_DIR/.profile"
+echo "export PATH=/app/.confluent/bin:$PATH" > "$BUILD_DIR/.profile"
