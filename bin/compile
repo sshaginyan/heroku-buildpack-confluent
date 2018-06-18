@@ -8,4 +8,5 @@ ENV_DIR=$3
 wget -O /tmp/confluent.tar.gz http://packages.confluent.io/archive/4.1/confluent-4.1.1-2.11.tar.gz
 tar xvzf /tmp/confluent.tar.gz -C /tmp
 cp -R /tmp/confluent-4.1.1 "$BUILD_DIR/.confluent"
-export PATH="$BUILD_DIR/.confluent/bin:":$PATH
+export PATH="$BUILD_DIR/.confluent/bin":$PATH
+confluent
