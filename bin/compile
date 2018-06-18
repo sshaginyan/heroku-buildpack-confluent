@@ -6,9 +6,9 @@ CACHE_DIR=$2
 ENV_DIR=$3
 
 wget -O /tmp/confluent.tar.gz http://packages.confluent.io/archive/4.1/confluent-4.1.1-2.11.tar.gz
+tar xvzf /tmp/confluent.tar.gz -C /tmp/confluent
 mkdir "$BUILD_DIR/.confluent"
-tar xvzf /tmp/confluent.tar.gz -C "$BUILD_DIR/.confluent"
-cd ~
+
 ls -a
 
 touch "$BUILD_DIR/HELLOWORLD"
