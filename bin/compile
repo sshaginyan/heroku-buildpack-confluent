@@ -5,8 +5,8 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
-wget -O /tmp/confluent.tar.gz http://packages.confluent.io/archive/4.1/confluent-4.1.1-2.11.tar.gz
+wget -O /tmp/confluent.tar.gz http://packages.confluent.io/archive/5.1/confluent-5.1.0-2.11.tar.gz
 tar xvzf /tmp/confluent.tar.gz -C /tmp
-rm -rf /tmp/confluent-4.1.1/share/java/kafka
-cp -R /tmp/confluent-4.1.1 "$BUILD_DIR/.confluent"
+rm -rf /tmp/confluent-5.1.0/share/java/kafka
+cp -R /tmp/confluent-5.1.0 "$BUILD_DIR/.confluent"
 echo "export PATH=/app/.confluent/bin:$PATH" > "$BUILD_DIR/.profile"
